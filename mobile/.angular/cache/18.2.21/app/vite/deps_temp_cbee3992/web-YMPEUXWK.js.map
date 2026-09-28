@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@capacitor-community/contacts/dist/esm/web.js"],
+  "sourcesContent": ["import { WebPlugin } from '@capacitor/core';\nexport class ContactsWeb extends WebPlugin {\n  async checkPermissions() {\n    throw this.unimplemented('Not implemented on web.');\n  }\n  async requestPermissions() {\n    throw this.unimplemented('Not implemented on web.');\n  }\n  async getContact() {\n    throw this.unimplemented('Not implemented on web.');\n  }\n  async getContacts() {\n    throw this.unimplemented('Not implemented on web.');\n  }\n  async createContact() {\n    throw this.unimplemented('Not implemented on web.');\n  }\n  async deleteContact() {\n    throw this.unimplemented('Not implemented on web.');\n  }\n  async pickContact() {\n    throw this.unimplemented('Not implemented on web.');\n  }\n}\n"],
+  "mappings": ";;;;;;;;AACO,IAAM,cAAN,cAA0B,UAAU;AAAA,EACnC,mBAAmB;AAAA;AACvB,YAAM,KAAK,cAAc,yBAAyB;AAAA,IACpD;AAAA;AAAA,EACM,qBAAqB;AAAA;AACzB,YAAM,KAAK,cAAc,yBAAyB;AAAA,IACpD;AAAA;AAAA,EACM,aAAa;AAAA;AACjB,YAAM,KAAK,cAAc,yBAAyB;AAAA,IACpD;AAAA;AAAA,EACM,cAAc;AAAA;AAClB,YAAM,KAAK,cAAc,yBAAyB;AAAA,IACpD;AAAA;AAAA,EACM,gBAAgB;AAAA;AACpB,YAAM,KAAK,cAAc,yBAAyB;AAAA,IACpD;AAAA;AAAA,EACM,gBAAgB;AAAA;AACpB,YAAM,KAAK,cAAc,yBAAyB;AAAA,IACpD;AAAA;AAAA,EACM,cAAc;AAAA;AAClB,YAAM,KAAK,cAAc,yBAAyB;AAAA,IACpD;AAAA;AACF;",
+  "names": []
+}

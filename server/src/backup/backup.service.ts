@@ -23,8 +23,20 @@ export class BackupService {
     private cloudinaryService: CloudinaryService,
   ) {
     this.uploadRoot = process.env.UPLOAD_ROOT || path.join(process.cwd(), 'uploads');
-    if (!fs.existsSync(this.uploadRoot)) {
-      fs.mkdirSync(this.uploadRoot, { recursive: true });
+    try {
+      if (!fs.existsSync(this.uploadRoot)) {
+        fs.mkdirSync(this.uploadRoot, { recursive: true });
+      }
+    } catch (err: any) {
+      if (err?.code === 'EACCES') {
+        const os = require('os');
+        this.uploadRoot = path.join(os.tmpdir(), 'ichat_uploads');
+        if (!fs.existsSync(this.uploadRoot)) {
+          fs.mkdirSync(this.uploadRoot, { recursive: true });
+        }
+      } else {
+        throw err;
+      }
     }
   }
 

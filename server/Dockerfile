@@ -21,8 +21,11 @@ RUN npm ci --omit=dev && npm cache clean --force
 # Copy compiled output from builder
 COPY --from=builder /app/dist ./dist
 
-# Security: run as non-root user
-RUN addgroup -S ichat && adduser -S ichat -G ichat
+# Security: run as non-root user & ensure uploads directory permissions
+RUN addgroup -S ichat && adduser -S ichat -G ichat && \
+    mkdir -p /app/uploads && \
+    chown -R ichat:ichat /app
+
 USER ichat
 
 EXPOSE 3000
