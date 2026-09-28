@@ -1,0 +1,25 @@
+# Dependency directories
+node_modules/
+dist/
+
+# Environment files (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker
+docker-compose.override.yml
+
+# Build artifacts
+*.tsbuildinfo
+coverage/

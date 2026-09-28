@@ -1,0 +1,55 @@
+// IChat Theme Color Palette
+:root {
+  /** Primary Emerald Teal **/
+  --ion-color-primary: #00A884;
+  --ion-color-primary-rgb: 0, 168, 132;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #009474;
+  --ion-color-primary-tint: #1ab190;
+
+  /** Secondary Ocean Cyan **/
+  --ion-color-secondary: #0284C7;
+  --ion-color-secondary-rgb: 2, 132, 199;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #0274af;
+  --ion-color-secondary-tint: #1b90cd;
+
+  /** Accent Success **/
+  --ion-color-success: #25D366;
+  --ion-color-success-rgb: 37, 211, 102;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+
+  /** Backgrounds (Light Mode) **/
+  --ichat-bg-primary: #F0F2F5;
+  --ichat-bg-card: #FFFFFF;
+  --ichat-bg-header: #008069;
+  --ichat-text-primary: #111B21;
+  --ichat-text-secondary: #667781;
+  --ichat-bubble-sent: #D9FDD3;
+  --ichat-bubble-received: #FFFFFF;
+  --ichat-border-color: #E9EDEF;
+
+  --ion-background-color: var(--ichat-bg-primary);
+  --ion-text-color: var(--ichat-text-primary);
+  --ion-font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+/* Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+  body {
+    --ichat-bg-primary: #0B141A;
+    --ichat-bg-card: #111B21;
+    --ichat-bg-header: #202C33;
+    --ichat-text-primary: #E9EDEF;
+    --ichat-text-secondary: #8696A0;
+    --ichat-bubble-sent: #005C4B;
+    --ichat-bubble-received: #202C33;
+    --ichat-border-color: #222D34;
+
+    --ion-background-color: var(--ichat-bg-primary);
+    --ion-text-color: var(--ichat-text-primary);
+  }
+}

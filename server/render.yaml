@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: ichat-server
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:prod
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+      - key: UPLOAD_ROOT
+        value: ./uploads
+    disk:
+      name: ichat-uploads
+      mountPath: /opt/render/project/src/uploads
+      sizeGB: 1

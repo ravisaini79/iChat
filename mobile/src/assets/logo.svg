@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="ichat-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A884" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#00A884" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#ichat-grad)" filter="url(#shadow)"/>
+  <path d="M140 180C140 146.863 166.863 120 200 120H312C345.137 120 372 146.863 372 180V270C372 303.137 345.137 330 312 330H240L170 380V330H200C166.863 330 140 303.137 140 270V180Z" fill="white" fill-opacity="0.95"/>
+  <circle cx="216" cy="225" r="18" fill="#00A884"/>
+  <circle cx="256" cy="225" r="18" fill="#009474"/>
+  <circle cx="296" cy="225" r="18" fill="#0284C7"/>
+</svg>
